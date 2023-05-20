@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laptop Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Screen Size (Inches)</h2>
+    <input class="area"  type="text" id="uiScreenSize" class="floatLabel" name="Squareft" value="14.5">
+	</form>
+<form class="form">
+	<h2>RAM</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-1">4</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="8" checked/>
+		<label for="radio-bath-2">8</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="12"/>
+		<label for="radio-bath-3">12</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="16"/>
+		<label for="radio-bath-4">16</label>
+	</div>
+		<h2>Manufacturer</h2>
+	<div>
+  <select class="location" name="" id="uimanufacturer">
+    <option value="" disabled="disabled" selected="selected">Choose a Manufacturer</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<h2>Category</h2>
+	<div>
+  <select class="location" name="" id="uiCategory">
+    <option value="" disabled="disabled" selected="selected">Choose a Category</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<h2>Screen</h2>
+	<div>
+  <select class="location" name="" id="uiScreen">
+    <option value="" disabled="disabled" selected="selected">Choose a Screen</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<h2>CPU</h2>
+	<div>
+  <select class="location" name="" id="uiCPU">
+    <option value="" disabled="disabled" selected="selected">Choose a CPU</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<h2>Storage Type</h2>
+	<div>
+  <select class="location" name="" id="uiStorage">
+    <option value="" disabled="disabled" selected="selected">Choose a Storage</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<h2>GPU</h2>
+	<div>
+  <select class="location" name="" id="uiGPU">
+    <option value="" disabled="disabled" selected="selected">Choose a GPU</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+  </div>
+		<!-- <h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>--</option>
+        <option>--</option>
+  </select>
+	</div> -->
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
